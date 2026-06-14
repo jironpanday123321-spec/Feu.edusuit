@@ -162,7 +162,7 @@ const Grades = ({ navigateTo }) => {
           {academicData.map((term, index) => (
             <div key={index} className="semester-section">
               <div className="semester-title">{term.semester}</div>
-              <div style={{ overflowX: 'auto' }}>
+              <div className="table-responsive">
                 <table className="grades-table">
                   <thead>
                     <tr>
@@ -182,24 +182,22 @@ const Grades = ({ navigateTo }) => {
                         <td>
                           <span style={{ 
                             fontWeight: '600', 
-                            color: course.grade === 'F' ? '#e53935' : 
-                                   course.grade === 'RETAKE' ? '#fb8c00' : 
-                                   course.grade === 'IP' ? '#00a4ef' : '#555' 
+                            color: (course.grade === 'F' || course.grade === 'RETAKE' || course.grade === 'IP') ? '#555' : '#555' 
                           }}>
                             {course.grade || '-'}
                           </span>
                         </td>
                         <td>
                           {course.grade === 'P' ? (
-                            <span className="icon-check">&#10004; Pass</span>
+                            <span><span className="icon-check">&#10004;</span> Pass</span>
                           ) : course.grade && course.grade !== 'F' && course.grade !== 'RETAKE' && course.grade !== 'IP' ? (
-                            <span className="icon-check">&#10004; Pass</span>
+                            <span><span className="icon-check">&#10004;</span> Pass</span>
                           ) : course.grade === 'F' ? (
-                            <span style={{color: '#e53935'}}>Fail</span>
+                            <span>Fail</span>
                           ) : course.grade === 'RETAKE' ? (
-                            <span style={{color: '#fb8c00'}}>Retake</span>
+                            <span>Retake</span>
                           ) : course.grade === 'IP' ? (
-                             <span style={{color: '#00a4ef'}}>In Progress</span>
+                             <span>In Progress</span>
                           ) : '-'}
                         </td>
                       </tr>
@@ -208,15 +206,7 @@ const Grades = ({ navigateTo }) => {
                 </table>
               </div>
               {term.note && (
-                <div style={{ 
-                  marginTop: '10px', 
-                  fontSize: '0.75rem', 
-                  color: '#888', 
-                  fontStyle: 'italic',
-                  padding: '5px 15px',
-                  backgroundColor: '#f9f9f9',
-                  borderRadius: '4px'
-                }}>
+                <div className="semester-note">
                   {term.note}
                 </div>
               )}

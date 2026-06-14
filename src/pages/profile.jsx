@@ -8,7 +8,7 @@ const Profile = ({ navigateTo }) => {
   return (
     <div className="page-container">
       <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="profile" navigateTo={navigateTo} />
-      
+
       <div className="page-content">
         <div className="page-header">
           <h1>Profile</h1>
@@ -16,16 +16,16 @@ const Profile = ({ navigateTo }) => {
 
         <div className="page-body">
           <div className="verify-alert">
-            <div style={{fontSize: '0.7rem', color:'#999', marginBottom: '5px'}}>VERIFY INFORMATION</div>
+            <div style={{ fontSize: '0.7rem', color: '#999', marginBottom: '5px' }}>VERIFY INFORMATION</div>
             <p>Is the information correct? Please make necessary changes if needed.</p>
             <div className="verify-link"><span>&#10004;</span> I verify that the information is correct</div>
           </div>
 
           <div className="section">
-            <div className="section-title" style={{textTransform: 'none'}}>
+            <div className="section-title" style={{ textTransform: 'none' }}>
               Basic Information <span className="edit-link"><span className="icon">&#9998;</span> Edit</span>
             </div>
-            
+
             <div className="grid-3-col">
               <div className="data-group">
                 <span className="data-label">Sex <span className="req">*</span></span>
@@ -67,7 +67,7 @@ const Profile = ({ navigateTo }) => {
           </div>
 
           <div className="section">
-            <div className="section-title" style={{textTransform: 'none'}}>User Tags</div>
+            <div className="section-title" style={{ textTransform: 'none' }}>User Tags</div>
             <div className="grid-3-col">
               <div className="data-group">
                 <span className="data-label">Academic Standing</span>
@@ -82,7 +82,7 @@ const Profile = ({ navigateTo }) => {
 
           <div className="section">
             <div className="section-title">
-              PRIVACY POLICY CONSENT FORM (TO WHOM FEU CAN DISCLOSE MY RECORDS): 
+              PRIVACY POLICY CONSENT FORM (TO WHOM FEU CAN DISCLOSE MY RECORDS):
               <span className="edit-link"><span className="icon">&#9998;</span> Edit</span>
             </div>
             <div className="grid-3-col">
