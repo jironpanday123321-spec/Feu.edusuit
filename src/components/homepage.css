@@ -1,0 +1,450 @@
+.homepage-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f8fa;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main-header {
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.header-dropdown {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.header-dropdown select {
+    border: none;
+    background: none;
+    color: #00a4ef;
+    font-size: 0.85rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.content-body {
+    padding: 30px;
+}
+
+.blue-banner {
+    background-color: #0d4d80;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(135deg, rgba(8, 64, 110, 0.9) 0%, rgba(13, 77, 128, 0.9) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.bb-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: #aed6f1;
+}
+
+.bb-content {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.bb-highlight {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.bb-desc {
+    font-size: 0.85rem;
+    color: #d6eaf8;
+}
+
+.bb-check {
+    color: #2ab24b;
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.btn-go-enrollment {
+    position: absolute;
+    bottom: 1px;
+    right: 20px;
+    background-color: white;
+    color: #0d4d80;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.2s;
+}
+
+.btn-go-enrollment:hover {
+    opacity: 0.9;
+}
+
+.midyear-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.midyear-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.midyear-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.btn-read-now {
+    background-color: #2ab24b;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    pointer-events: none;
+}
+
+.carousel-nav span {
+    width: 24px;
+    height: 24px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -10px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.dot.active {
+    background-color: #555;
+}
+
+.section-block {
+    background-color: #e6f0f5;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid #dce8ee;
+    overflow: hidden;
+}
+
+.section-header {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+
+.section-body {
+    background-color: #f7fbfe;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-footer {
+    text-align: right;
+    padding: 8px 15px;
+    font-size: 0.7rem;
+    color: #999;
+}
+
+.balance-amount {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.balance-info {
+    color: #00a4ef;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+.balance-info .icon {
+    margin-right: 5px;
+}
+
+/* Right Sidebar */
+.tasks-sidebar {
+    width: 280px;
+    background-color: #f9faec;
+    height: 100vh;
+    border-left: 1px solid #e1e1e1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.tasks-sidebar h2 {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.task-category {
+    margin-bottom: 20px;
+}
+
+.tc-header {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-icon-small {
+    background-color: #333;
+    color: white;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    margin-left: 5px;
+}
+
+.task-item {
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.ti-title {
+    font-size: 0.85rem;
+    color: #00a4ef;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ti-title::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #00a4ef;
+    margin-right: 5px;
+}
+
+.ti-desc {
+    font-size: 0.75rem;
+    color: #777;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.enlistment-tag {
+    background-color: #ffc107;
+    color: #333;
+    font-size: 0.65rem;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.empty-task {
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+/* Modal */
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header span {
+    font-size: 0.75rem;
+    color: #777;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0 20px 20px;
+}
+
+.modal-body h3 {
+    margin: 0 0 20px 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.modal-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    color: #00a4ef;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-link:last-child {
+    border-bottom: none;
+}
+
+.modal-link .ext-icon {
+    font-size: 1rem;
+}
+
+.modal-footer {
+    padding: 15px 20px;
+    text-align: right;
+    border-top: 1px solid #eee;
+}
+
+.btn-modal-close {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 900px) {
+    .homepage-container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .main-content {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+    .tasks-sidebar {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-top: 1px solid #e1e1e1;
+    }
+    .btn-go-enrollment {
+        position: relative;
+        margin-top: 15px;
+        bottom: auto;
+        right: auto;
+        align-self: flex-start;
+    }
+    .blue-banner {
+        display: flex;
+        flex-direction: column;
+    }
+    .bb-desc {
+        padding-right: 0 !important;
+    }
+    .modal-content {
+        width: 90%;
+        max-width: 400px;
+    }
+}

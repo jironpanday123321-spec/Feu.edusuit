@@ -1,0 +1,130 @@
+.grades-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.grades-page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.grades-page-header {
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grades-page-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.btn-download-tor {
+  background-color: #2ab24b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-download-tor .icon {
+  margin-right: 8px;
+}
+
+.grades-body {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.semester-section {
+  margin-bottom: 40px;
+}
+
+.semester-title {
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grades-table th {
+  text-align: left;
+  padding: 10px 15px;
+  font-size: 0.75rem;
+  color: #888;
+  border-bottom: 1px solid #eee;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.grades-table td {
+  padding: 15px;
+  font-size: 0.85rem;
+  color: #555;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.grades-table tr:last-child td {
+  border-bottom: none;
+}
+
+.icon-check {
+  color: #00a4ef;
+  font-size: 1rem;
+}
+
+.term-average-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.term-average-label {
+  margin-right: 20px;
+}
+
+.term-average-value {
+  font-weight: bold;
+  color: #333;
+}
+
+@media screen and (max-width: 900px) {
+    .grades-page-container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .grades-page-content {
+        overflow-y: visible;
+    }
+    .grades-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

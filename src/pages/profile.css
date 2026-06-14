@@ -1,0 +1,145 @@
+.page-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.page-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.page-header {
+  padding: 15px 30px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.page-body {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.verify-alert {
+  background-color: #f0f8ff;
+  border-left: 4px solid #00a4ef;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+}
+
+.verify-alert p {
+  margin: 0 0 10px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.verify-link {
+  color: #00a4ef;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.verify-link span {
+  color: #2ab24b;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edit-link {
+  font-size: 0.75rem;
+  color: #00a4ef;
+  margin-left: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.edit-link .icon {
+  margin-right: 3px;
+}
+
+.grid-3-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.data-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.data-label .req {
+  color: #dc3545;
+}
+
+.data-value {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.tag-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+@media screen and (max-width: 900px) {
+    .page-container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .page-content {
+        overflow-y: visible;
+    }
+    .grid-3-col {
+        grid-template-columns: 1fr;
+    }
+}
