@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
-import './Profile.css';
+import './profile.css';
 
 const Profile = ({ navigateTo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
