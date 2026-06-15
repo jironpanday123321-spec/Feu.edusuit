@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './sideber.css';
 import feuLogo from '../assets/feuLogo.jpg'; // Assuming the logo can be reused for the header
 
-const Sidebar = ({ isModalOpen, setIsModalOpen, currentPage, navigateTo }) => {
+const Sidebar = ({ isModalOpen, setIsModalOpen, currentPage, navigateTo, onLogout }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -47,6 +47,14 @@ const Sidebar = ({ isModalOpen, setIsModalOpen, currentPage, navigateTo }) => {
         <div className="nav-toggle">
           <span className="toggle-label">OFF <span className="toggle-switch"></span> Enable Tips</span>
         </div>
+        
+        <button 
+          className="nav-item logout-btn" 
+          onClick={(e) => { e.preventDefault(); onLogout && onLogout(); }}
+          style={{ marginTop: 'auto', border: 'none', background: 'none', cursor: 'pointer', textAlign: 'left', width: '100%', color: '#ff4d4d' }}
+        >
+          <span className="icon" style={{ color: '#ff4d4d' }}>&#10162;</span> <span className="nav-text">Logout</span>
+        </button>
       </div>
 
       <div className="sidebar-footer">

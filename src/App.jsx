@@ -5,6 +5,7 @@ import Grades from './pages/grades';
 import Login from './login/Login';
 import './App.css';
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(() => {
     return localStorage.getItem('isLoggedIn') === 'true';
@@ -45,6 +46,7 @@ function App() {
       {currentPage === 'profile' && <Profile navigateTo={navigateTo} onLogout={handleLogout} />}
       {currentPage === 'grades' && <Grades navigateTo={navigateTo} onLogout={handleLogout} />}
     </div>
+
   );
 }
 

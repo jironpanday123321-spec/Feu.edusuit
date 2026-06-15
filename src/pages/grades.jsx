@@ -144,12 +144,12 @@ const academicData = [
   }
 ];
 
-const Grades = ({ navigateTo }) => {
+const Grades = ({ navigateTo, onLogout }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="grades-page-container">
-      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="grades" navigateTo={navigateTo} />
+      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="grades" navigateTo={navigateTo} onLogout={onLogout} />
 
       <div className="grades-page-content">
         <div className="grades-page-header">

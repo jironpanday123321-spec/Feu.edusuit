@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Sidebar from './sidebar';
 import './homepage.css';
 
-const Homepage = ({ navigateTo }) => {
+const Homepage = ({ navigateTo, onLogout }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="homepage-container">
-      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="home" navigateTo={navigateTo} />
+      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="home" navigateTo={navigateTo} onLogout={onLogout} />
 
       <div className="main-content">
         <div className="main-header">

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
 import './profile.css';
 
-const Profile = ({ navigateTo }) => {
+const Profile = ({ navigateTo, onLogout }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="page-container">
-      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="profile" navigateTo={navigateTo} />
+      <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="profile" navigateTo={navigateTo} onLogout={onLogout} />
 
       <div className="page-content">
         <div className="page-header">
