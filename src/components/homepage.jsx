@@ -63,7 +63,7 @@ const Homepage = ({ navigateTo }) => {
           <div className="section-block">
             <div className="section-header">BALANCE</div>
             <div className="section-body" style={{ backgroundColor: '#e6f0f5', padding: '20px' }}>
-              <div className="balance-amount">Outstanding Balance : 48,737.34</div>
+              <div className="balance-amount">Outstanding Balance : 47,798.47</div>
               <div className="balance-info">
                 <span className="icon">&#8505;</span> You can now view your Balance widget in the <a href="#" style={{ color: '#00a4ef' }}>My Payments</a> page.
               </div>

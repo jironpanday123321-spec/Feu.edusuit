@@ -20,7 +20,7 @@ const Sidebar = ({ isModalOpen, setIsModalOpen, currentPage, navigateTo }) => {
           <span className="user-name">PATRICK COMEDIAM <span className="dropdown-arrow">&#9662;</span></span>
         </div>
         <p className="user-email">2022062691@feu.edu.ph</p>
-        <p className="user-course"><strong>BSPSYCH - 2024</strong><br />Bachelor of Science in Psychology</p>
+        <p className="user-course">BSPSYCH - 2024<br /><strong>Bachelor of Science in Psychology</strong></p>
         <p className="user-id">Student Number: 2022062691</p>
       </div>
 

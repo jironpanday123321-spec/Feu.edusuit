@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Sidebar from '../components/sidebar';
+import { generateCOR, sampleCORData } from '../utils/generateCOR';
 import './Grades.css';
 
 const academicData = [
@@ -149,12 +150,12 @@ const Grades = ({ navigateTo }) => {
   return (
     <div className="grades-page-container">
       <Sidebar isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} currentPage="grades" navigateTo={navigateTo} />
-      
+
       <div className="grades-page-content">
         <div className="grades-page-header">
           <h1>TOR View</h1>
-          <button className="btn-download-tor">
-            <span className="icon">&#11123;</span> Download TOR
+          <button className="btn-download-tor" onClick={() => generateCOR(sampleCORData)}>
+            <span className="icon">&#11123;</span> Download COR
           </button>
         </div>
 
@@ -180,9 +181,9 @@ const Grades = ({ navigateTo }) => {
                         <td>{course.subject}</td>
                         <td>{course.units.toFixed(1)}</td>
                         <td>
-                          <span style={{ 
-                            fontWeight: '600', 
-                            color: (course.grade === 'F' || course.grade === 'RETAKE' || course.grade === 'IP') ? '#555' : '#555' 
+                          <span style={{
+                            fontWeight: '600',
+                            color: (course.grade === 'F' || course.grade === 'RETAKE' || course.grade === 'IP') ? '#555' : '#555'
                           }}>
                             {course.grade || '-'}
                           </span>
@@ -197,7 +198,7 @@ const Grades = ({ navigateTo }) => {
                           ) : course.grade === 'RETAKE' ? (
                             <span>Retake</span>
                           ) : course.grade === 'IP' ? (
-                             <span>In Progress</span>
+                            <span>In Progress</span>
                           ) : '-'}
                         </td>
                       </tr>
