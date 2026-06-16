@@ -23,7 +23,7 @@ const Profile = ({ navigateTo, onLogout }) => {
 
           <div className="section">
             <div className="section-title" style={{ textTransform: 'none' }}>
-              Basic Information <span className="edit-link"><span className="icon">&#9998;</span> Edit</span>
+              Basic Information <span className="edit-link"><span className="icon"></span></span>
             </div>
 
             <div className="grid-3-col">
@@ -53,7 +53,7 @@ const Profile = ({ navigateTo, onLogout }) => {
               </div>
               <div className="data-group">
                 <span className="data-label">Primary Guardian Email Address <span className="req">*</span></span>
-                <span className="data-value">bayquonp@gmail.com</span>
+                <span className="data-value">patrickbayquen0503@gmail.com</span>
               </div>
               <div className="data-group">
                 <span className="data-label">Primary Guardian Contact number <span className="req">*</span></span>
@@ -83,7 +83,7 @@ const Profile = ({ navigateTo, onLogout }) => {
           <div className="section">
             <div className="section-title">
               PRIVACY POLICY CONSENT FORM (TO WHOM FEU CAN DISCLOSE MY RECORDS):
-              <span className="edit-link"><span className="icon">&#9998;</span> Edit</span>
+              <span className="edit-link"><span className="icon"></span></span>
             </div>
             <div className="grid-3-col">
               <div className="data-group">
@@ -96,11 +96,11 @@ const Profile = ({ navigateTo, onLogout }) => {
               </div>
               <div className="data-group">
                 <span className="data-label">Father's Contact Number</span>
-                <span className="data-value">9353566198</span>
+                <span className="data-value">0939909179</span>
               </div>
               <div className="data-group">
                 <span className="data-label">Father's Email</span>
-                <span className="data-value">bayquonp@gmail.com</span>
+                <span className="data-value">bayquenp@gmail.com</span>
               </div>
               <div className="data-group">
                 <span className="data-label">Consent given to my Mother: <span className="req">*</span></span>
@@ -112,7 +112,7 @@ const Profile = ({ navigateTo, onLogout }) => {
               </div>
               <div className="data-group">
                 <span className="data-label">Mother's Contact Number</span>
-                <span className="data-value">9353566198</span>
+                <span className="data-value">09272639504</span>
               </div>
               <div className="data-group">
                 <span className="data-label">Mother's Email</span>

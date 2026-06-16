@@ -220,6 +220,175 @@
     color: #999;
 }
 
+/* ─── Schedule ─────────────────────────────────────────────── */
+
+.schedule-container {
+    background-color: white;
+    padding: 0;
+}
+
+.schedule-header-row {
+    display: grid;
+    grid-template-columns: 80px repeat(7, 1fr);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.time-label-header {
+    border-right: 1px solid #e0e0e0;
+}
+
+.day-header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    border-right: 1px solid #e0e0e0;
+}
+
+.day-header:last-child {
+    border-right: none;
+}
+
+.schedule-grid {
+    display: flex;
+    overflow: hidden;
+}
+
+.time-labels-column {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+/* Each hour = 2 half-hour rows × 36px = 72px total */
+.hour-label {
+    height: 72px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4px 0 0 10px;
+    font-size: 0.75rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.grid-content-area {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* 6AM–8PM = 14 hours × 2 half-hour slots = 28 rows, each 36px */
+    grid-template-rows: repeat(28, 36px);
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Horizontal stripes — grid-row set inline in JSX so they always
+   span all 7 columns regardless of class-block z-stacking */
+.grid-stripe {
+    grid-column: 1 / -1;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.grid-stripe.on-hour {
+    border-bottom: 1px solid #ddd;
+}
+
+.grid-stripe.half-hour {
+    border-bottom: 1px dashed #ccc;
+}
+
+/* Vertical column separators */
+.vertical-line {
+    border-right: 1px solid #eaeaea;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Class blocks */
+.class-block {
+    margin: 2px;
+    padding: 8px 8px 22px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.class-block.lec {
+    background-color: #eef2ff;
+    border: 1.5px solid #d4daf5;
+}
+
+.class-block.lab {
+    background-color: #eef2ff;
+    border: 1.5px solid #d4daf5;
+}
+
+.class-code {
+    font-weight: 700;
+    color: #222;
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+}
+
+.class-name {
+    color: #444;
+    font-size: 0.72rem;
+    line-height: 1.3;
+}
+
+.class-tag {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background-color: #e2d7f7;
+    color: #5d34a4;
+    padding: 2px 5px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* ─── Balance ───────────────────────────────────────────────── */
+
+.balance-section-body {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid #f0f0f0;
+}
+
+.balance-amount-footer {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.balance-info-footer {
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.balance-timestamp {
+    font-size: 0.7rem;
+    color: #999;
+    text-align: right;
+    margin-top: 10px;
+}
+
 .balance-amount {
     font-size: 1rem;
     font-weight: 500;
@@ -236,7 +405,8 @@
     margin-right: 5px;
 }
 
-/* Right Sidebar */
+/* ─── Right Sidebar ─────────────────────────────────────────── */
+
 .tasks-sidebar {
     width: 280px;
     background-color: #f9faec;
@@ -326,7 +496,8 @@
     padding-left: 10px;
 }
 
-/* Modal */
+/* ─── Modal ─────────────────────────────────────────────────── */
+
 .modal-overlay {
     position: absolute;
     top: 0;
@@ -413,22 +584,26 @@
     cursor: pointer;
 }
 
-/* Mobile Responsiveness */
+/* ─── Mobile ────────────────────────────────────────────────── */
+
 @media screen and (max-width: 900px) {
     .homepage-container {
         flex-direction: column;
         overflow-y: auto;
     }
+
     .main-content {
         overflow-y: visible;
         overflow-x: hidden;
     }
+
     .tasks-sidebar {
         width: 100%;
         height: auto;
         border-left: none;
         border-top: 1px solid #e1e1e1;
     }
+
     .btn-go-enrollment {
         position: relative;
         margin-top: 15px;
@@ -436,13 +611,16 @@
         right: auto;
         align-self: flex-start;
     }
+
     .blue-banner {
         display: flex;
         flex-direction: column;
     }
+
     .bb-desc {
         padding-right: 0 !important;
     }
+
     .modal-content {
         width: 90%;
         max-width: 400px;
