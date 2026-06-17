@@ -67,7 +67,7 @@ const Profile = ({ navigateTo, onLogout }) => {
           </div>
 
           <div className="section">
-            <div className="section-title" style={{ textTransform: 'none' }}>User Tags</div>
+            <div className="section-title" style={{ textTransform: 'none' }}>Good Standing</div>
             <div className="grid-3-col">
               <div className="data-group">
                 <span className="data-label">Academic Standing</span>

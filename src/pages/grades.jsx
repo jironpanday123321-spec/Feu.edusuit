@@ -7,11 +7,11 @@ const academicData = [
   {
     semester: "First Year - First Semester",
     courses: [
-      { code: "GED0106", subject: "Art Appreciation", units: 3, grade: "A+" },
+      { code: "GED0106", subject: "Art Appreciation", units: 3, grade: "B+" },
       { code: "GED0107", subject: "Readings in Philippine History", units: 3, grade: "B+" },
       { code: "GED0108", subject: "Retorika at Panitikan ng Pilipinas", units: 3, grade: "B" },
       { code: "GED0109", subject: "Speech Communication", units: 3, grade: "C+" },
-      { code: "GED0110", subject: "Understanding the Self", units: 3, grade: "A+" },
+      { code: "GED0110", subject: "Understanding the Self", units: 3, grade: "B+" },
       { code: "NSTP0101", subject: "NSTP 1", units: 3, grade: "P" },
       { code: "PSY1101", subject: "Introduction to Psychology", units: 3, grade: "B+" },
       { code: "PSY1103", subject: "General Psychology Concepts", units: 3, grade: "C" },
@@ -21,11 +21,11 @@ const academicData = [
   {
     semester: "First Year - Second Semester",
     courses: [
-      { code: "GED0101", subject: "College Academic Skills in English", units: 3, grade: "A+" },
+      { code: "GED0101", subject: "College Academic Skills in English", units: 3, grade: "B+" },
       { code: "GED0102", subject: "Life and Works of Rizal", units: 3, grade: "B" },
       { code: "GED0103", subject: "Mathematics in the Modern World", units: 3, grade: "B+" },
       { code: "GED0104", subject: "Science, Technology and Society", units: 3, grade: "C+" },
-      { code: "GED0105", subject: "Wika, Kultura at Lipunan", units: 3, grade: "A+" },
+      { code: "GED0105", subject: "Wika, Kultura at Lipunan", units: 3, grade: "B+" },
       { code: "PSY1102", subject: "Psychological Statistics", units: 3, grade: "B" },
       { code: "PSY1106", subject: "Introduction to Counseling Psychology", units: 3, grade: "B+" },
       { code: "NSTP0102", subject: "NSTP 2", units: 3, grade: "P" },
@@ -38,7 +38,7 @@ const academicData = [
     courses: [
       { code: "GED0128", subject: "Livelihood Communication", units: 3, grade: "C" },
       { code: "PSY0113", subject: "Human Growth and Behavior", units: 3, grade: "B+" },
-      { code: "GED0196", subject: "Applied Ethics in CT", units: 3, grade: "A+" },
+      { code: "GED0196", subject: "Applied Ethics in CT", units: 3, grade: "B+" },
       { code: "GED0109", subject: "LEAP", units: 3, grade: "C+" },
       { code: "PTF0110", subject: "PATHFITNESS WRP", units: 2, grade: "B+" },
       { code: "GED0205", subject: "Purposive Communication", units: 3, grade: "B" },

@@ -256,3 +256,43 @@
   color: #00a4ef;
   text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .login-left {
+    display: none; /* Hide news panel on mobile */
+  }
+
+  .login-right {
+    min-width: unset;
+    width: 100%;
+    padding: 30px 20px;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .news-banner-wrapper {
+    display: none;
+  }
+
+  .header-logo {
+    width: 60px;
+  }
+
+  .header-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .login-form {
+    gap: 12px;
+  }
+
+  .footer {
+    margin-top: 40px;
+  }
+}

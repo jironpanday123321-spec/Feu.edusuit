@@ -14,27 +14,27 @@ const Homepage = ({ navigateTo, onLogout }) => {
   const scheduleData = [
     { day: 'Mon', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
     { day: 'Mon', start: '12:00', end: '14:00', code: 'PSYC 310', name: 'FORENSIC PSYCHOLOGY LEC', type: 'LEC' },
-    { day: 'Mon', start: '16:00', end: '19:00', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
+    { day: 'Mon', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Tue', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
     { day: 'Tue', start: '12:00', end: '14:00', code: 'PSYC 310', name: 'FORENSIC PSYCHOLOGY LEC', type: 'LEC' },
-    { day: 'Tue', start: '16:00', end: '19:00', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
+    { day: 'Tue', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Wed', start: '07:30', end: '09:00', code: 'PATHFIT WRP 2', name: '', type: 'LEC' },
     { day: 'Wed', start: '09:00', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
-    { day: 'Wed', start: '16:00', end: '19:00', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
+    { day: 'Wed', start: '16:30', end: '19:30', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
 
     { day: 'Thu', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
     { day: 'Thu', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
-    { day: 'Thu', start: '16:00', end: '19:00', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
+    { day: 'Thu', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Fri', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
     { day: 'Fri', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
-    { day: 'Fri', start: '16:00', end: '19:00', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
+    { day: 'Fri', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Sat', start: '07:30', end: '09:00', code: 'PATHFIT WRP 2', name: '', type: 'LEC' },
     { day: 'Sat', start: '09:00', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
-    { day: 'Sat', start: '16:00', end: '19:00', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
+    { day: 'Sat', start: '16:30', end: '19:30', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
   ];
 
   const getRowSpan = (startTime, endTime) => {
@@ -81,10 +81,10 @@ const Homepage = ({ navigateTo, onLogout }) => {
           <div className="blue-banner">
             <div className="bb-title">EDUSUITE</div>
             <div className="bb-content">
-              <span className="bb-check">&#10004;</span> Marked as Enrolling for <span className="bb-highlight">2025-2026 Semes...</span>
+              <span className="bb-check">&#10004;</span> Marked as Enrolled <span className="bb-highlight">2025-2026 Semes...</span>
             </div>
             <div className="bb-desc">
-              You are currently tagged as enrolling for <strong>2025-2026 Semester</strong>.
+              You are currently tagged as Enrolled for <strong>2025-2026 Semester</strong>. if you have changed your mind please click the the button below.
             </div>
           </div>
 
@@ -94,7 +94,7 @@ const Homepage = ({ navigateTo, onLogout }) => {
               <span>&gt;</span>
             </div>
             <h2>Midyear Term SY 2025-2026</h2>
-            <p>See the enrollment schedule for midyear term SY 2025-2026.</p>
+            <p>See the Enrolled schedule for midyear term SY 2025-2026.</p>
             <button className="btn-read-now">Read Now</button>
             <div className="carousel-dots">
               <div className="dot"></div>
@@ -197,23 +197,24 @@ const Homepage = ({ navigateTo, onLogout }) => {
       </div>
 
       <div className="tasks-sidebar">
-        <h2>Tasks</h2>
+        <div className="tasks-sidebar-title-row">
+          <h2>Tasks</h2>
+          <span className="info-icon-plain">ℹ️</span>
+        </div>
 
         <div className="task-category">
-          <div className="tc-header">Hold Orders <span className="info-icon-small">i</span></div>
-          <div className="task-item">
-            <div className="ti-title">Outstanding Balance</div>
-            <div className="ti-desc">
-              Please settle your balance to be able to enlist<br />
-              For Verification &bull; Due on: 06-20-2026
+          <div className="task-item-status">
+            <div className="ti-verification-line">
+              <span className="ti-blue-clock">🕒</span>
+              <span>For Verification • Due on: 06-20-2026</span>
             </div>
-            <span className="enlistment-tag">ENLISTMENT</span>
+            <div className="enlisted-badge">ENLISTED</div>
           </div>
         </div>
 
         <div className="task-category">
-          <div className="tc-header">Clearance <span className="info-icon-small">i</span></div>
-          <div className="empty-task">No clearances assigned.</div>
+          <div className="tc-header">Clearance <span className="info-icon-plain">ℹ️</span></div>
+          <div className="clearance-status-msg">Cleared</div>
         </div>
       </div>
     </div>
