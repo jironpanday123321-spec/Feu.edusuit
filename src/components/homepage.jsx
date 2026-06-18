@@ -68,13 +68,13 @@ const Homepage = ({ navigateTo, onLogout }) => {
           <div className="blue-banner">
             <div className="bb-title">EDUSUITE TIPS</div>
             <div className="bb-content">
-              Enrollment is open for <span className="bb-highlight">2025-2026 Semester Midyear...</span>
+              Enrolled for <span className="bb-highlight">2025-2026 Semester Midyear...</span>
             </div>
             <div className="bb-desc" style={{ paddingRight: '150px' }}>
-              You must verify your information in your profile page and complete your unfinished clearances to enlist. If you think this is an error please email the school registrar.
+              You have verified your information in your profile page and completed your clearance to enlist.
             </div>
             <button className="btn-go-enrollment">
-              Go To Enrollment
+              Enrolled
             </button>
           </div>
 
@@ -89,18 +89,8 @@ const Homepage = ({ navigateTo, onLogout }) => {
           </div>
 
           <div className="midyear-card">
-            <div className="carousel-nav">
-              <span>&lt;</span>
-              <span>&gt;</span>
-            </div>
             <h2>Midyear Term SY 2025-2026</h2>
-            <p>See the Enrolled schedule for midyear term SY 2025-2026.</p>
-            <button className="btn-read-now">Read Now</button>
-            <div className="carousel-dots">
-              <div className="dot"></div>
-              <div className="dot active"></div>
-              <div className="dot"></div>
-            </div>
+            <p>Enrolled schedule for midyear term SY 2025-2026.</p>
           </div>
 
           <div className="section-block">
