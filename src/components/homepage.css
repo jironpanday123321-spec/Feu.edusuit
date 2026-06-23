@@ -592,7 +592,8 @@
 
     .schedule-header-row,
     .schedule-grid {
-        min-width: 800px; /* Allow horizontal scroll on mobile */
+        min-width: 800px;
+        /* Allow horizontal scroll on mobile */
     }
 
     .tasks-sidebar {

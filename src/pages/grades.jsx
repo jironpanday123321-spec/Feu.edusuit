@@ -54,18 +54,18 @@ const academicData = [
   {
     semester: "Summer Term (June-July 2026) - In Progress",
     courses: [
-      { code: "PSY2201", subject: "Personality Theories", units: 6, grade: "IP" },
       { code: "WRP2211", subject: "PATHFITNESS SWIMMING 1", units: 1, grade: "IP" },
       { code: "PSY2205", subject: "Forensic Psychology Lec", units: 3, grade: "IP" },
       { code: "PSY2206", subject: "Forensic Psychology Lab", units: 3, grade: "IP" },
-      { code: "PSY2203", subject: "Developmental Psychology Lec", units: 3, grade: "IP" },
-      { code: "PSY2204", subject: "Developmental Psychology Lab", units: 3, grade: "IP" },
       { code: "PSY2204", subject: "Research Psychology Case Study 1", units: 5, grade: "RETAKE" },
     ]
   },
   {
     semester: "Second Year - Second Semester",
     courses: [
+      { code: "PSY2201", subject: "Psychodynamic Theories", units: 6, grade: "IP" },
+      { code: "PSY2203", subject: "Developmental Psychology 2 Lec", units: 3, grade: "IP" },
+      { code: "PSY2204", subject: "Developmental Psychology 2 Lab", units: 3, grade: "IP" },
       { code: "GED0112", subject: "Scholarly Inquiry", units: 3, grade: "" },
       { code: "MTY3317", subject: "General Botany LEC", units: 3, grade: "" },
       { code: "WRP3301", subject: "PATHFITNESS DANCE", units: 1, grade: "" },

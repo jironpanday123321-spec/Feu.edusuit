@@ -47,9 +47,9 @@ const Sidebar = ({ isModalOpen, setIsModalOpen, currentPage, navigateTo, onLogou
         <div className="nav-toggle">
           <span className="toggle-label">OFF <span className="toggle-switch"></span> Enable Tips</span>
         </div>
-        
-        <button 
-          className="nav-item logout-btn" 
+
+        <button
+          className="nav-item logout-btn"
           onClick={(e) => { e.preventDefault(); onLogout && onLogout(); }}
           style={{ marginTop: 'auto', border: 'none', background: 'none', cursor: 'pointer', textAlign: 'left', width: '100%', color: '#ff4d4d' }}
         >

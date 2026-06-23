@@ -78,7 +78,8 @@
 .grades-table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed; /* Keep this for alignment */
+  table-layout: fixed;
+  /* Keep this for alignment */
 }
 
 .grades-table th {
@@ -100,11 +101,30 @@
 }
 
 /* Explicit widths for alignment */
-.grades-table th:nth-child(1), .grades-table td:nth-child(1) { width: 120px; }
-.grades-table th:nth-child(2), .grades-table td:nth-child(2) { width: auto; }
-.grades-table th:nth-child(3), .grades-table td:nth-child(3) { width: 80px; }
-.grades-table th:nth-child(4), .grades-table td:nth-child(4) { width: 80px; }
-.grades-table th:nth-child(5), .grades-table td:nth-child(5) { width: 150px; }
+.grades-table th:nth-child(1),
+.grades-table td:nth-child(1) {
+  width: 120px;
+}
+
+.grades-table th:nth-child(2),
+.grades-table td:nth-child(2) {
+  width: auto;
+}
+
+.grades-table th:nth-child(3),
+.grades-table td:nth-child(3) {
+  width: 80px;
+}
+
+.grades-table th:nth-child(4),
+.grades-table td:nth-child(4) {
+  width: 80px;
+}
+
+.grades-table th:nth-child(5),
+.grades-table td:nth-child(5) {
+  width: 150px;
+}
 
 .grades-table tr:last-child td {
   border-bottom: none;
@@ -120,14 +140,17 @@
 }
 
 @media screen and (max-width: 900px) {
-    .grades-page-container {
-        flex-direction: column;
-        overflow-y: auto;
-    }
-    .grades-page-content {
-        overflow-y: visible;
-    }
-    .grades-table {
-        width: 800px; /* Force minimum width for horizontal scroll */
-    }
+  .grades-page-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .grades-page-content {
+    overflow-y: visible;
+  }
+
+  .grades-table {
+    width: 800px;
+    /* Force minimum width for horizontal scroll */
+  }
 }

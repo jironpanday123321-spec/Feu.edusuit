@@ -132,14 +132,16 @@
 }
 
 @media screen and (max-width: 900px) {
-    .page-container {
-        flex-direction: column;
-        overflow-y: auto;
-    }
-    .page-content {
-        overflow-y: visible;
-    }
-    .grid-3-col {
-        grid-template-columns: 1fr;
-    }
+  .page-container {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .page-content {
+    overflow-y: visible;
+  }
+
+  .grid-3-col {
+    grid-template-columns: 1fr;
+  }
 }

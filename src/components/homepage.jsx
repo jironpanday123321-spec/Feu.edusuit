@@ -12,28 +12,28 @@ const Homepage = ({ navigateTo, onLogout }) => {
   ];
 
   const scheduleData = [
-    { day: 'Mon', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
+    { day: 'Mon', start: '10:30', end: '12:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LEC' },
     { day: 'Mon', start: '12:00', end: '14:00', code: 'PSYC 310', name: 'FORENSIC PSYCHOLOGY LEC', type: 'LEC' },
     { day: 'Mon', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
-    { day: 'Tue', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
+    { day: 'Tue', start: '10:30', end: '12:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LAB' },
     { day: 'Tue', start: '12:00', end: '14:00', code: 'PSYC 310', name: 'FORENSIC PSYCHOLOGY LEC', type: 'LEC' },
     { day: 'Tue', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Wed', start: '07:30', end: '09:00', code: 'PATHFIT WRP 2', name: '', type: 'LEC' },
-    { day: 'Wed', start: '09:00', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
+    { day: 'Wed', start: '10:30', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
     { day: 'Wed', start: '16:30', end: '19:30', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
 
-    { day: 'Thu', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
-    { day: 'Thu', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
+    { day: 'Thu', start: '10:30', end: '12:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LAB' },
+    { day: 'Thu', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LEC' },
     { day: 'Thu', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
-    { day: 'Fri', start: '09:00', end: '11:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LAB' },
-    { day: 'Fri', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PERSONALITY THEORIES', type: 'LEC' },
+    { day: 'Fri', start: '10:30', end: '12:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LAB' },
+    { day: 'Fri', start: '12:00', end: '14:00', code: 'PSYC 201', name: 'PSYCHODYNAMIC THEORIES', type: 'LEC' },
     { day: 'Fri', start: '16:30', end: '19:30', code: 'PSYC 350', name: 'RESEARCH PSYCHOLOGY METHODS CASE STUDY 1', type: 'LEC' },
 
     { day: 'Sat', start: '07:30', end: '09:00', code: 'PATHFIT WRP 2', name: '', type: 'LEC' },
-    { day: 'Sat', start: '09:00', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
+    { day: 'Sat', start: '10:30', end: '12:30', code: 'PSYC 311L', name: 'FORENSIC PSYCHOLOGY LAB', type: 'LAB' },
     { day: 'Sat', start: '16:30', end: '19:30', code: 'PSYC 102', name: 'DEVELOPMENTAL PSYCHOLOGY', type: 'LEC' },
   ];
 
