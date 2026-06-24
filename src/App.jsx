@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Homepage from './components/homepage';
 import Profile from './pages/profile';
 import Grades from './pages/grades';
@@ -36,6 +37,7 @@ function App() {
     return (
       <div className="App">
         <Login onLogin={handleLogin} />
+        <Analytics />
       </div>
     );
   }
@@ -45,6 +47,7 @@ function App() {
       {currentPage === 'home' && <Homepage navigateTo={navigateTo} onLogout={handleLogout} />}
       {currentPage === 'profile' && <Profile navigateTo={navigateTo} onLogout={handleLogout} />}
       {currentPage === 'grades' && <Grades navigateTo={navigateTo} onLogout={handleLogout} />}
+      <Analytics />
     </div>
 
   );
