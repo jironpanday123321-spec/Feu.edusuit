@@ -150,7 +150,7 @@ const Homepage = ({ navigateTo, onLogout }) => {
           <div className="section-block">
             <div className="section-header">BALANCE</div>
             <div className="balance-section-body">
-              <div className="balance-amount-footer">Outstanding Balance/Running Balance : 47,798.47</div>
+              <div className="balance-amount-footer">Outstanding Balance/Running Balance : 27,798.45</div>
               <div className="balance-info-footer">
                 <span className="icon">&#8505;</span> You can now view your COR Balance widget in the <a href="#" style={{ color: '#00a4ef' }}>My Grades</a> page.
               </div>
